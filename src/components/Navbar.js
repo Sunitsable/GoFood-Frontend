@@ -49,7 +49,7 @@ export default function Navbar(props) {
                             </form> :
                             <div>
 
-                                <div className="btn bg-white text-success mx-2 " onClick={loadCart}>
+                                <div className="btn bg-white text-success mx-3 " onClick={loadCart}>
                                     <Badge color="secondary" badgeContent={items.length} >
                                         <ShoppingCartIcon />
                                     </Badge>

@@ -41,7 +41,7 @@ export default function Card(props) {
     }
     console.log(food)
     console.log(new Date())
-    if (food !== []) {
+    if (food.length !== 0) {
       if (food.size === size) {
         await dispatch({ type: "UPDATE", id: foodItem._id, price: finalPrice, qty: qty })
         return
@@ -96,7 +96,8 @@ export default function Card(props) {
               ₹{finalPrice}/-
             </div>
           </div>
-          <hr></hr>
+          <br></br>
+          <br></br>
           <button className={`btn btn-success justify-center ms-2 `} onClick={handleAddToCart}>Add to Cart</button>
           {/* <button className={`btn btn-danger justify-center ms-2 ${btnEnable ? "" : "disabled"}`} onClick={handleRemoveCart}>Remove</button> */}
         </div>
